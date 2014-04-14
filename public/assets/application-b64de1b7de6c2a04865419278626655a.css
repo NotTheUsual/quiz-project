@@ -1,0 +1,321 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+/*
+$true: #14c10d;
+$false: #c10d0d;
+*/
+
+
+body footer {
+  background-color: rgba(255, 255, 255, 0.19);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1em;
+  text-align: center;
+}
+
+#logo {
+  text-decoration: none;
+  font-size: 2em;
+  color: #fff;
+  padding: 1em;
+}
+
+.user-links {
+  display: inline-block;
+  font-family: sans-serif;
+}
+
+.user-links li {
+  display: inline-block;
+}
+
+.user-links.right li {
+  margin-right: 1em;
+}
+
+.user-links.left li {
+  margin-left: 1em;
+}
+
+.user-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.user-links li a:hover {
+  text-decoration: underline;
+}
+
+.flash {
+  color: #fff;
+  text-align: center;
+  margin-top: 0.5em;
+  font-size: 2em;
+}
+.body-result {
+  text-align: center; }
+
+.body-correct {
+  background-color: #14c10d; }
+
+.body-incorrect {
+  background-color: #c10d0d; }
+
+.body-question {
+  background-color: #555; }
+
+.body-new-question {
+  background-color: #bbb; }
+
+.body-no-question {
+  background-color: #222; }
+
+.result_text {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  color: #fff;
+  font-family: serif;
+  font-size: 6em;
+  font-style: italic;
+  font-weight: 500;
+  text-align: center; }
+
+.question-text {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  color: #fff;
+  font-family: serif;
+  font-size: 6em;
+  font-style: italic;
+  font-weight: 500;
+  text-align: center; }
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  background-color: #ddd;
+  border-bottom: 0.5em solid #aaa;
+  font-size: 2em;
+  width: auto;
+  font-family: sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  color: #555;
+  cursor: pointer;
+  padding: 0.4em 0.7em 0.4em 0.6em;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px; }
+  .button:active {
+    border-bottom: none;
+    position: relative;
+    top: 0.5em; }
+  .button:active, .button:focus {
+    outline: none; }
+
+.button-true {
+  color: #fff;
+  background-color: #14c10d;
+  border-bottom: 0.5em solid #0f910a;
+  margin-right: 1em; }
+
+.button-false {
+  color: #fff;
+  background-color: #c10d0d;
+  border-bottom: 0.5em solid #910a0a; }
+
+form {
+  text-align: center; }
+
+.new-question-form {
+  width: 800px;
+  margin: 4em auto; }
+  .new-question-form textarea {
+    width: 100%;
+    font-size: 4em;
+    background: none;
+    border: none;
+    resize: none;
+    font-family: serif;
+    font-style: italic;
+    font-weight: 600; }
+    .new-question-form textarea:focus {
+      outline: none; }
+  .new-question-form input[type=radio] {
+    display: none; }
+  .new-question-form input[type=radio]:checked + .button-true, .new-question-form input[type=radio]:checked + .button-false {
+    border-bottom: none;
+    position: relative;
+    top: 0.5em; }
+  .new-question-form .button-create {
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 1em; }
+
+.apology {
+  color: #888;
+  font-family: sans-serif;
+  font-size: 4em;
+  margin-top: 2em;
+  text-align: center; }
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.body-stats {
+  background-color: #4b135c;
+  text-align: center;
+  color: #fff; }
+  .body-stats h1 {
+    font-size: 3em;
+    margin-top: 0.5em;
+    margin-bottom: 0.7em; }
+  .body-stats p {
+    font-family: sans-serif;
+    font-size: 2em;
+    color: rgba(255, 255, 255, 0.63); }
+  .body-stats p:last-of-type {
+    margin-bottom: 4em; }
+  .body-stats p:first-of-type {
+    margin-top: 2em; }
+  .body-stats .questions-count {
+    font-family: serif;
+    font-size: 6em;
+    color: #fff;
+    vertical-align: text-top;
+    font-style: italic;
+    margin-left: 0.07em;
+    margin-right: 0.16em;
+    position: relative;
+    top: -0.15em; }
+  .body-stats .difficult-question {
+    margin-top: 0.5em;
+    margin-bottom: 0.75em; }
+  .body-stats .difficult-question span {
+    color: #fff;
+    font-family: serif;
+    font-size: 3em;
+    font-style: italic;
+    font-weight: 500; }
+  .body-stats .question-difficulty {
+    font-style: italic;
+    font-family: serif;
+    color: #fff; }
+  .body-stats hr {
+    margin-bottom: 3em;
+    margin-top: 3em;
+    width: 90%;
+    opacity: 0.6; }
+  .body-stats hr:first-of-type {
+    margin-top: 0; }
+  .body-stats table {
+    display: inline-block;
+    margin-top: 2em; }
+    .body-stats table td {
+      font-size: 3em;
+      padding-right: 2em;
+      text-align: left; }
+      .body-stats table td:first-child {
+        font-size: 2em;
+        font-family: sans-serif;
+        opacity: 0.6;
+        padding-right: 1em; }
+      .body-stats table td:last-child {
+        padding-right: 0; }
+.body-profile {
+  background-color: #0c1069;
+  text-align: center;
+  color: #fff; }
+  .body-profile h1 {
+    font-size: 4em;
+    margin-top: 1em;
+    margin-bottom: 0.5em; }
+  .body-profile .score-title {
+    font-size: 2em;
+    margin-right: 1em;
+    opacity: 0.8;
+    position: relative;
+    top: 1em;
+    font-family: sans-serif; }
+  .body-profile .score {
+    font-size: 8em;
+    vertical-align: text-top; }
+
+.body-sign-in, .body-sign-up {
+  background-color: #333; }
+  .body-sign-in form, .body-sign-up form {
+    width: 500px;
+    margin: 4em auto;
+    text-align: right; }
+    .body-sign-in form input[type=text], .body-sign-in form input[type=password], .body-sign-up form input[type=text], .body-sign-up form input[type=password] {
+      width: 100%;
+      font-size: 3.5em;
+      margin-bottom: 0.4em;
+      border: none;
+      background-color: #333;
+      border-bottom: 2px solid #fff;
+      color: #fff; }
+      .body-sign-in form input[type=text]:focus, .body-sign-in form input[type=password]:focus, .body-sign-up form input[type=text]:focus, .body-sign-up form input[type=password]:focus {
+        outline: none; }
