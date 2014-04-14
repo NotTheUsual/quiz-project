@@ -20,9 +20,6 @@ module QuizProject
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
     config.i18n.enforce_available_locales = true
-    config.cache_classes = true
     config.serve_static_assets = true
-    config.assets.compile = true
-    config.assets.digest = true
   end
 end
