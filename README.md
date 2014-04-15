@@ -1,27 +1,7 @@
-# Quiz Project
+# QuizApp
 
-Figured we can use this to document what we've done/explain how it works.
-This is also a little bit for my benefit so I can go over what we actually did earlier.
-Obviously all this can be deleted pretty quickly.
+Week 8 project for Makers Academy designed to introduce us to Rails, mostly developed with @mfolsom. This app lets you complete simple true/false questions, add your own questions and see your stats. It was made with Rails (and various bits of associated magic), styled with Sass and tested with Cucumber and Rspec. You can play with it [here](http://infinite-earth-4893.herokuapp.com/).
 
-## Viewing questions
+## How it works
 
-So, in the actual app (i.e. on localhost:3000), you can see questions at `/questions/:id`. Each question has the text of the question and True and False buttons. Clicking an answer takes you to `questions/:id/result`, which displays 'Correct!' if you were right, and 'Incorrect' if you were wrong.
-
-We created
-- answer_questions.feature (the Cucumber test)
-- question_steps.rb (the step definitions for that test file)
-- `show` method in QuestionsController
--- route declared via `resources :questions` in routes.rb
--- show gets the `:id` param from the url (`questions/:id`)
--- puts the relevant question in the `@question` instance variable
-- `show.html/erb` view
--- question text in a paragraph tag
--- form with a True input[submit] and a False input[submit], method=get, action=questions/:id/result
-- `get 'questions/:id/result' => 'questions#show_result'` route in routes.rb
--- *this should definitely be a POST request, but I couldn't get that to work*
-- `show_result` method in QuestionsController
--- this checks if either 'True' or 'False' is in the params hash (from the relevant input) and then assigns the appropriate value to @user_answer
--- also assigns the appropriate question to @question
-- `show_result.html.erb` view
--- Displays 'Correct!' if @user_answer == @question.answer, and 'Incorrect' otherwise
+The first thing you have to do before you use the app is sign up (or sign in) so that we can track your answers. Then, you'll be presented with a true or false question to answer (by pressing either the giant "True" button, or the giant "false" button). Once you've done that, you'll be told whether or not your answer was correct, and then you'll be given a new question to answer. This continues until you've answered all the questions (which won't take long, as we only seed three...). If you think there should be more questions, you can help us by adding one yourself. You can't answer your own questions, but it helps the site. At any time (though we'd suggest answering a few questions first), you can check out your statistics. Your profile page lists your name and current score. The stats page tells you more general statistics about the site: the hardest and easiest questions; the number of questions; and the best players. Simple.
